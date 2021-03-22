@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Hello</title>
+     <style>
+    .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid blue;
+            padding: 10px;
+
+    }
+  </style>
+  </head>
+ 
+
+  <body>
+    <div id="app" />
+    <script type="text/babel">
+
+      class Hello extends React.Component {
+        render() {
+          return (
+            <div class="center">
+            <h1 >Calculator </h1>
+            <label>Input 1: &nbsp;&nbsp;</label>
+            <input type='text/babel' id='first' /><br /> <br />
+            <label>Input 2: &nbsp; </label>
+            <input type='text/babel' id='second' /><br/> <br/>
+            <button> +</button>&nbsp;<button>-</button>&nbsp;<button>*</button>&nbsp;<button>/</button>
+            <br/><br/>
+            <output > Result :  </output>
+
+        
+            </div>
+            
+          );
+        }
+      }
+
+     
+
+      ReactDOM.render(<Hello />, document.querySelector("#app"));
+
+    </script>
+  </body>
+</html>

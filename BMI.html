@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>Hello</title>
+     <style>
+    .center {
+            margin: auto;
+            width: 50%;
+            border: 3px solid rgb(2, 2, 2);
+            padding: 10px;
+
+    }
+  </style>
+  </head>
+ 
+
+  <body>
+    <div id="app" />
+    <script type="text/babel">
+
+      class Hello extends React.Component {
+        render() {
+          return (
+            <div class="center">
+            <h1 > BMI Index Calculator </h1>
+            <p> Enter your weight and height below. </p>
+            <label>Weight(kgs) :  &nbsp;  </label>
+            <input type='text/babel' id='first' /><br /> <br />
+            <label> Height(ft): &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type='text/babel' id='second' /><br/> <br/>
+            <label> Height(inches): &nbsp;</label>
+            <input type='text/babel' id='second' /> <br/> <br/>
+            <button> Submit </button><br/><br/>
+            <output > Result :  </output>
+
+        
+            </div>
+            
+          );
+        }
+      }
+
+     
+
+      ReactDOM.render(<Hello />, document.querySelector("#app"));
+
+    </script>
+  </body>
+</html>
